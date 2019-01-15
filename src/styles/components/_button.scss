@@ -10,3 +10,19 @@
 .button-alert {
     background: $alert-red;
 }
+
+.button-round {
+    background: $blue;
+    border-radius: 500px;
+    color: white;
+    font-size: 2rem;
+    margin-top: 2rem;
+    padding: 2.2rem 2.4rem 2rem 2.4rem;
+    position: absolute;
+    right: 0;
+    transition: all .2s ease-in-out;
+    &:hover {
+        box-shadow: 2px 2px 8px rgba(0,0,0,0.4);
+        margin-top: 1.9rem;
+    }
+}

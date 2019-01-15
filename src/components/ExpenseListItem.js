@@ -9,7 +9,7 @@ const ExpenseListItem = ({ id, description, amount, createdAt }) => (
                 <Link to={`/edit/${id}`}>
                     {description}
                 </Link>
-                <p>{moment(createdAt).format('MMM Do, YYYY')}</p>
+                <p>{moment(createdAt).format('MMMM Do, YYYY')}</p>
             </h3>
             
             <p>${(amount / 100).toFixed(2)}</p>

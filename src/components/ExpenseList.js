@@ -9,13 +9,14 @@ let total = 0;
 const ExpenseList = (props) => (
     <div className="panel">
         <h3>Expense List</h3>
+        {props.expenses.length === 0 && <p className="none-added">No Expenses Added Yet</p>}
         {props.expenses.map((expense) => {
             total = total + expense.amount;
             return (
                 <ExpenseListItem key={expense.id} {...expense} />
             )
         })}
-        <ExpenseTotals expenses={props.expenses} />
+        {props.expenses.length !== 0 && <ExpenseTotals expenses={props.expenses} />}
     </div>
 );
 
