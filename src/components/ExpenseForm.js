@@ -61,7 +61,7 @@ class ExpenseForm extends Component {
 
     render() {
         return (
-            <div>
+            <div className="form__expenses">
                 <h3>Add a New Expense</h3>
                 <form onSubmit={this.handleFormSubmit}>
                     <input 

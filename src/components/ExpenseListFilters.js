@@ -18,7 +18,7 @@ class ExpenseListFilters extends Component {
 
     render() {
         return (
-            <div>
+            <div className="form__filters">
                 <input 
                     type="text" 
                     value={this.props.filters.text} 

@@ -3,35 +3,31 @@ header {
     margin-bottom: 3rem;
 }
 
-header .nav {
+.header__content {
+    align-items: center;
     display: flex;
-    justify-content: center;
-    padding: $m-size;
+    justify-content: space-between;
+    padding: $m-size 0;
 }
 
-header h1 {
-    color: white;
-    flex-grow: 1;
-    font-size: 2rem;
-    font-weight: 200;
-    margin: 0;
-}
-
-header h1 a {
+.header__title {
     color: white;
     text-decoration: none;
+    h2 {
+        margin: 0;
+    }
 }
 
-header .nav-links {
-    padding-top: 2px;
+.header__links {
     a {
         color: white;
-        font-weight: 300;
-        margin-right: 0;
+        font-size: $m-size;
+        font-weight: 200;
         padding: 2rem;
         text-decoration: none;
-        &:last-of-type {
-            padding-right: 0;
+        text-transform: uppercase;
+        &:hover {
+            cursor: pointer;
         }
     }
 }

@@ -4,8 +4,13 @@ html {
 
 body {
   background: #f0f0f0;
-  font-family: Helvetica, Arial, sans-serif;
+  color: #333333;
+  font-family: $font-body;
   font-size: $m-size;
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: 400;
 }
 
 button {
